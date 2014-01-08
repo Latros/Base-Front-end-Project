@@ -1,4 +1,4 @@
-This week I spent a large chunk amount of time learning the ins & outs of Grunt, Yeoman & Bower (henceforth referred to as GYB). I've been using them for awhile, but mostly by copying other peoples Grunt tasks and never truly hunkering down to *learn* them. That's what I did this week.
+This week I spent a large chunk amount of time learning the ins & outs of Grunt, Yeoman & Bower (in this article henceforth referred to as GYB). I've been using them for awhile, but mostly by copying other peoples Grunt tasks and never truly hunkering down to *learn* them. That's what I did this week.
 
 I'm by no means an expert, but I definitely feel comfortable enough with each to confidently say "if you're a developer who ISN'T using these, you're *probably* taking crazy pills, or just don't know any better". Either way, if you read through this article, hopefully you'll see the light :)
 
@@ -6,29 +6,25 @@ GYB is what I'll call a "workflow stack". The stack is aimed at making developme
 
 Here's a breakdown of a bunch of common tasks that almost every web developer will find themselves doing at some point:
 
-Asset minification / concatenation tasks that you *shouldn't* be doing manually
-===============================================================================
+### Asset minification / concatenation tasks that you *shouldn't* be doing manually
 - Compiling your LESS/SASS into CSS (either client side or on the server side)
 - Minifying (incl. removing comments) JavaScript & concatenating it all into one .JS file
 - Minifying (incl. removing comments) CSS/LESS/SASS & concatenating it all into one .CSS/LESS/SCSS file
 - Minifying (incl. removing comments) your HTML
 
-Workflow tasks that you *shouldn't* be doing manually
-=====================================================
+### Workflow tasks that you *shouldn't* be doing manually
 - Changing a file, alt-tabbing to your browser, hitting refresh (this method is still used far too much these days!)
 - Going to jQuery.com or getbootstrap.com, downloading the latest jquery/bootstrap, dragging it into your projects library directory, and then writing the script/link tag in your HTML. This applies to *any* javascript or css framework that you would need to fetch for your project
 
-Deployment tasks that you *shouldn't* be doing manually
-==================================================
+### Deployment tasks that you *shouldn't* be doing manually
 - Copying only the necessary project files (once minified and concatenated) from a development directory into a production-ready directory
 - Deploying that production-ready directory off to a remote server to be pushed live to the public
 
-Misc best-practice tasks that you *shouldn't* be doing manually
-===============================================================
+### Misc best-practice tasks that you *shouldn't* be doing manually
 - Validating your HTML against W3 standards by going to their site and pasting your html and checking if it validates
 - Optimizing your images for web use (PNG/GIF/JPEG file sizes made much smaller -- I'm looking at you Photoshop "Save for Web" abusers)
 
-There is a better way to do *all* of the above, 100% automatically.
+### There is a better way to do *all* of the above, 100% automatically.
 
 - What if your images could automatically be optimized for web *the second you drag them into your `/images/` folder*?
 - What if your HTML could automatically be validated against W3 standards *the second you hit "save" after writing some code*?
