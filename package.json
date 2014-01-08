@@ -1,6 +1,11 @@
 {
-  "name": "BeauCSS_Website",
-  "version": "0.0.1",
+  "name": "PROJECT_NAME_HERE",
+  "version": "PROJECT_VERSION_HERE",
+  "homepage": "PROJECT_HOMEPAGE_HERE",
+  "authors": [
+    "Sam Stiles <sam@phasesolutions.ca>"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-uglify": "~0.2.2",
